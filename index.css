@@ -26,14 +26,14 @@ html,body{
 #hour{
     border-width: 5px;
     width: 100px;
-    transform:rotate(90deg);
+    /* transform:rotate(90deg); */
     position:relative;
     left:5.64em;
     top:12.3em;
     border-color: blue;
 }
 #minute{
-    transform:rotate(90deg);
+    /* transform:rotate(45deg); */
     border-width: 2.5px;
     position: relative;
     left: 0.9em;
@@ -41,11 +41,27 @@ html,body{
     border-color:red;
 }
 #second{
-    transform:rotate(90deg);
+    /* transform:rotate(90deg); */
     border-width: 1px;
     position: relative;
     left: 0.5em;
     top:11.6em;
     width:190px;
     border-color:yellowgreen;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+#hour {
+    animation: rotate 43200s infinite linear;
+}
+#minute {
+    animation: rotate 3600s infinite steps(60);
+}
+#second {
+    animation: rotate 60s infinite steps(60);
 }
