@@ -1,0 +1,51 @@
+html,body{
+    background:url(clockback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aquamarine;
+}
+
+.clockface{
+    margin:auto auto;
+    position: fixed;
+    top: 4em;
+    left: 10em;
+    border-radius: 5000px;
+    border: solid 10px;
+    border-color: lightgreen;
+    height: 25em;
+    width: 25em;
+}
+.hand{
+    height: 0px;
+    width: 180px;
+    border:solid 1px;
+    transform-origin: 100%;
+}
+
+#hour{
+    border-width: 5px;
+    width: 100px;
+    transform:rotate(90deg);
+    position:relative;
+    left:5.64em;
+    top:12.3em;
+    border-color: blue;
+}
+#minute{
+    transform:rotate(90deg);
+    border-width: 2.5px;
+    position: relative;
+    left: 0.9em;
+    top:11.8em;
+    border-color:red;
+}
+#second{
+    transform:rotate(90deg);
+    border-width: 1px;
+    position: relative;
+    left: 0.5em;
+    top:11.6em;
+    width:190px;
+    border-color:yellowgreen;
+}
