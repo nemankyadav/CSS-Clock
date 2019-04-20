@@ -50,7 +50,7 @@ html,body{
     border-color:yellowgreen;
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
     100% {
         transform: rotateZ(360deg);
     }
@@ -64,4 +64,4 @@ html,body{
 }
 #second {
     animation: rotate 60s infinite steps(60);
-}
+} */
