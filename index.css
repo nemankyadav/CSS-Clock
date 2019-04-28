@@ -23,7 +23,7 @@ html,body{
     transform-origin: 100%;
 }
 
-#hour{
+.hour{
     border-width: 5px;
     width: 100px;
     /* transform:rotate(90deg); */
@@ -32,7 +32,7 @@ html,body{
     top:12.3em;
     border-color: blue;
 }
-#minute{
+.minute{
     /* transform:rotate(45deg); */
     border-width: 2.5px;
     position: relative;
@@ -40,12 +40,12 @@ html,body{
     top:11.8em;
     border-color:red;
 }
-#second{
-    /* transform:rotate(90deg); */
+.second{
+    /* transform:rotate(270deg); */
     border-width: 1px;
-    position: relative;
+    position: absolute;
     left: 0.5em;
-    top:11.6em;
+    top:12.4em;
     width:190px;
     border-color:yellowgreen;
 }
