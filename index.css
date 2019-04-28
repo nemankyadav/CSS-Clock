@@ -1,8 +1,8 @@
 html,body{
-    background:url(clockback.jpg);
+    /* background:url(clockback.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: aquamarine;
+    background-color: black;
 }
 
 .clockface{
