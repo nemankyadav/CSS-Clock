@@ -9,3 +9,4 @@ setTimeout(function abcd() {
     x.style.transform=`rotate(${90+1}deg)`
     console.log("transformed!")
 }, 1000)
+// Hello
