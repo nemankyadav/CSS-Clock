@@ -25,4 +25,3 @@ function soundButton() {
     if(flag%2==1){clearInterval(a);b=setInterval(playClock0, 1000)}
     if(flag%2==0){clearInterval(b);a=setInterval(playClock, 1000)}
 }
-
