@@ -1,5 +1,5 @@
 html,body{
-    /* background:url(clockback.jpg); */
+    background:url(clockback.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
@@ -13,6 +13,7 @@ html,body{
     border-radius: 500px;
     height: 25em;
     width: 25em;
+    border: solid 10px white;
 }
 .hand{
     height: 0px;
@@ -47,72 +48,3 @@ html,body{
     width:190px;
     border-color:blue;
 }
-
-.sframe{
-    margin:auto auto;
-    position: fixed;
-    top: 2.2em;
-    left: 8.2em;
-    border-radius: 5000px;
-    border: solid 5px;
-    border-color:blue;
-    height: 28em;
-    width: 28em;
-}
-.mframe{
-    margin:auto auto;
-    position: fixed;
-    top: 2.7em;
-    left: 8.7em;
-    border-radius: 5000px;
-    border: solid 5px;
-    border-color:magenta;
-    height: 27em;
-    width: 27em;
-}
-.hframe{
-    margin:auto auto;
-    position: fixed;
-    top: 3.2em;
-    left: 9.2em;
-    border-radius: 500px;
-    border: solid 5px;
-    border-color:yellow;
-    height: 26em;
-    width: 26em;
-}
-
-.wrapper {
-	width: 500px;
-	margin: 300px 0 0;
-	transition: all 1s;
-	transform-origin: 50% 50%;
-}
-.inner {
-	display: inline-block;
-	padding: 1em;
-	transition: transform 1s;
-	background: lime;
-}
-html:hover .wrapper {
-	transform: rotate(180deg);
-}
-html:hover .inner {
-	/* transform: rotate(-180deg); */
-}
-
-/* @keyframes rotate {
-    100% {
-        transform: rotateZ(360deg);
-    }
-}
-
-#hour {
-    animation: rotate 43200s infinite linear;
-}
-#minute {
-    animation: rotate 3600s infinite steps(60);
-}
-#second {
-    animation: rotate 60s infinite steps(60);
-} */
