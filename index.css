@@ -47,4 +47,6 @@ html,body{
     top:12.4em;
     width:190px;
     border-color:blue;
+    /* transition: 0.05s all;
+    transition-timing-function: cubic-bezier(0.05, 1.61, 0.58, 1); */
 }

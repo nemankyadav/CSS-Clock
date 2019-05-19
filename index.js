@@ -1,3 +1,7 @@
+
+// This Project can show cool ticking animation if the rotation is increaesed instead of fetching
+// current time every second. The same animation is commented in the .second class in CSS file.
+
 const sound = new Audio("Tick.mp3")
 const x = document.querySelector(".second")
 const y = document.querySelector(".minute")
