@@ -29,3 +29,29 @@ function soundButton() {
     if(flag%2==1){clearInterval(a);b=setInterval(playClock0, 1000)}
     if(flag%2==0){clearInterval(b);a=setInterval(playClock, 1000)}
 }
+
+
+function frameChange() {
+    var ele1 = document.querySelector("#col1").value;
+    console.log(`The colour is ${ele1.value}`);
+    var ele = document.querySelector(":root")
+    ele.style.setProperty('--faceCol',ele1)
+}
+function hhChange() {
+    var ele1 = document.querySelector("#col2").value;
+    console.log(`The colour is ${ele1.value}`);
+    var ele = document.querySelector(":root")
+    ele.style.setProperty('--hhCol',ele1)
+}
+function mhChange() {
+    var ele1 = document.querySelector("#col3").value;
+    console.log(`The colour is ${ele1.value}`);
+    var ele = document.querySelector(":root")
+    ele.style.setProperty('--mhCol',ele1)
+}
+function shChange() {
+    var ele1 = document.querySelector("#col4").value;
+    console.log(`The colour is ${ele1.value}`);
+    var ele = document.querySelector(":root")
+    ele.style.setProperty('--shCol',ele1)
+}

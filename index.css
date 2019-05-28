@@ -1,8 +1,21 @@
+:root{
+    --faceCol:white;
+    --hhCol:yellow;
+    --mhCol:magenta;
+    --shCol:blue;
+}
+
 html,body{
     background:url(clockback.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
+}
+
+.colourPanel{
+    color: white;
+    position: fixed;
+    right: 1em;
 }
 
 .clockface{
@@ -13,7 +26,7 @@ html,body{
     border-radius: 500px;
     height: 25em;
     width: 25em;
-    border: solid 10px white;
+    border: solid 10px var(--faceCol);
 }
 .hand{
     height: 0px;
@@ -29,7 +42,7 @@ html,body{
     position:relative;
     left:5.64em;
     top:12.3em;
-    border-color: yellow;
+    border-color: var(--hhCol);
 }
 .minute{
     border-radius: 3px;
@@ -37,7 +50,7 @@ html,body{
     position: relative;
     left: 0.9em;
     top:11.8em;
-    border-color:magenta;
+    border-color:var(--mhCol);
 }
 .second{
     border-radius:1px;
@@ -46,7 +59,7 @@ html,body{
     left: 0.5em;
     top:12.4em;
     width:190px;
-    border-color:blue;
+    border-color:var(--shCol);
     /* transition: 0.05s all;
     transition-timing-function: cubic-bezier(0.05, 1.61, 0.58, 1); */
 }
