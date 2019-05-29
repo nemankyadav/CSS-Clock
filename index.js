@@ -30,28 +30,28 @@ function soundButton() {
     if(flag%2==0){clearInterval(b);a=setInterval(playClock, 1000)}
 }
 
-
 function frameChange() {
-    var ele1 = document.querySelector("#col1").value;
-    console.log(`The colour is ${ele1.value}`);
-    var ele = document.querySelector(":root")
-    ele.style.setProperty('--faceCol',ele1)
+    var ele = document.querySelector("#col1").value;
+    var elem = document.querySelector(":root")
+    elem.style.setProperty('--faceCol',ele)
 }
 function hhChange() {
-    var ele1 = document.querySelector("#col2").value;
-    console.log(`The colour is ${ele1.value}`);
-    var ele = document.querySelector(":root")
-    ele.style.setProperty('--hhCol',ele1)
+    var ele = document.querySelector("#col2").value;
+    var elem = document.querySelector(":root")
+    elem.style.setProperty('--hhCol',ele)
 }
 function mhChange() {
-    var ele1 = document.querySelector("#col3").value;
-    console.log(`The colour is ${ele1.value}`);
-    var ele = document.querySelector(":root")
-    ele.style.setProperty('--mhCol',ele1)
+    var ele = document.querySelector("#col3").value;
+    var elem = document.querySelector(":root")
+    elem.style.setProperty('--mhCol',ele)
 }
 function shChange() {
-    var ele1 = document.querySelector("#col4").value;
-    console.log(`The colour is ${ele1.value}`);
-    var ele = document.querySelector(":root")
-    ele.style.setProperty('--shCol',ele1)
+    var ele = document.querySelector("#col4").value;
+    var elem = document.querySelector(":root")
+    elem.style.setProperty('--shCol',ele)
+}
+function blur(){
+    var ele = document.querySelector('#blur');
+    console.log('hello')
+    console.log(ele.value)
 }
