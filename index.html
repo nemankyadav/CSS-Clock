@@ -16,20 +16,26 @@
         <div class="sframe"></div>
         <div class="hand second" ></div>
     </div>
-    <div class="colourPanel">
-    Select the colour for clock frame : <input id="col1" type="color" value="#ffffff"></input>
-    <input type="button" value="Apply" onclick="frameChange()"></input>
-    <br>
-    Select the colour for hour hand &nbsp &nbsp: <input id="col2" type="color" value="#ffff00"></input>
-    <input type="button" value="Apply" onclick="hhChange()"></input>
-    <br>
-    Select the colour for minute hand: <input id="col3" type="color" value="#00ff00"></input>
-    <input type="button" value="Apply" onclick="mhChange()"></input>
-    <br>
-    Select the colour for second hand: <input id="col4" type="color" value="#0000ff"></input>
-    <input type="button" value="Apply" onclick="shChange()"></input>
-    <br>
-    Drag To fix the blur Vaue : <input type="range" id="blur" name="blur" min="0" max="15" oninput="blur()">
+    <div class="stylePanel">
+        Select the colour for clock frame: <input id="col1" type="color" value="#ffffff">
+        <input type="button" value="Apply" onclick="frameChange()">
+        <br>
+        Select the colour for hour hand  &nbsp;: <input id="col2" type="color" value="#ffff00">
+        <input type="button" value="Apply" onclick="hhChange()">
+        <br>
+        Select the colour for minute hand: <input id="col3" type="color" value="#00ff00">
+        <input type="button" value="Apply" onclick="mhChange()">
+        <br>
+        Select the colour for second hand: <input id="col4" type="color" value="#0000ff">
+        <input type="button" value="Apply" onclick="shChange()">
+        <br>
+        Drag To fix the blur Value : <input type="range" id="blur" min="0" max="15" value="0">
+        <br>
+    </div>
+    <div class="positionPanel">
+            Drag To fix the X-Vector : <input type="range" id="xv" min="0" max="54" value="10">
+            <br>
+            Drag To fix the Y-Vector : <input type="range" id="yv" min="0" max="15" value="5">    
     </div>
     <script src="index.js"></script>        
 </body>

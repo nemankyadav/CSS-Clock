@@ -52,6 +52,18 @@ function shChange() {
 }
 function blur(){
     var ele = document.querySelector('#blur');
-    console.log('hello')
-    console.log(ele.value)
+    document.querySelector('.clockface').style.setProperty('filter',`blur(${ele.value}px)`)
 }
+document.querySelector('#blur').addEventListener("input",blur)
+
+function xv(){
+    var ele = document.querySelector('#xv');
+    document.querySelector('.clockface').style.setProperty('left',`${ele.value}em`)
+}
+document.querySelector('#xv').addEventListener("input",xv)
+
+function yv(){
+    var ele = document.querySelector('#yv');
+    document.querySelector('.clockface').style.setProperty('top',`${ele.value}em`)
+}
+document.querySelector('#yv').addEventListener("input",yv)

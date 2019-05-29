@@ -13,21 +13,39 @@ html,body{
     opacity: 50%;
 }
 
-.colourPanel{
-    color: white;
+.stylePanel{
+    font-family:consolas;
+    color: var(--faceCol);
     position: fixed;
     right: 1em;
+}
+
+.positionPanel{
+    font-family:consolas;
+    color: var(--faceCol);
+    position: fixed;
+    top: 25em;
+    right: 1em;
+}
+
+#yv{
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    position: relative;
+    top: 9em;
+    right: 5em
 }
 
 .clockface{
     margin:auto auto;
     position: fixed;
-    top: 4em;
+    top: 5em;
     left: 10em;
     border-radius: 500px;
     height: 25em;
     width: 25em;
     border: solid 10px var(--faceCol);
+    filter: blur(0px)
 }
 .hand{
     height: 0px;
@@ -56,9 +74,9 @@ html,body{
 .second{
     border-radius:1px;
     border-width: 1px;
-    position: absolute;
+    position: relative;
     left: 0.5em;
-    top:12.4em;
+    top:11.7em;
     width:190px;
     border-color:var(--shCol);
     /* transition: 0.05s all;
